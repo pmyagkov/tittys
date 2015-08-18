@@ -12,26 +12,34 @@ body {
 }
 
 .photo {
-    display: block;
     height: 100%;
+    width: 100%;
     background: 50% 0 no-repeat;
     position: relative;
 
     background-size: contain;
+
+    display: table;
 }
 
-.text {
-    position: absolute;
-    bottom: 20px;
-    display: inline-block;
-    width: 500px;
+.text-cell {
     font-weight: 100;
     font-family: Georgia, serif;
 
-    background: rgba(0,0,0,.5);
+    height: 100%;
+
     color: white;
 
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.text {
+    background: rgba(0,0,0,.5);
+    display: inline-block;
+
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 @media all and (orientation: portrait) {
@@ -47,11 +55,8 @@ body {
 
 @media all and (orientation: landscape) {
     .text {
-        width: 50vw;
-        left: 50%;
-        margin-left: -25vw;
+        height: 21vh;
         line-height: 7vh;
-        height: 22vh;
         font-size: 5vh;
     }
 }
