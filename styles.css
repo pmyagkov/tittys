@@ -1,0 +1,69 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    background: url('http://www.katebocciapresents.com/wp-content/uploads/2014/02/33-crinkled-paper-background-sml.jpg');
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.photo {
+    display: block;
+    height: 100%;
+    background: 50% 0 no-repeat;
+    position: relative;
+
+    background-size: contain;
+}
+
+.text {
+    position: absolute;
+    bottom: 20px;
+    display: inline-block;
+    width: 500px;
+    font-weight: 100;
+    font-family: Georgia, serif;
+
+    background: rgba(0,0,0,.5);
+    color: white;
+
+    padding: 10px;
+}
+
+@media all and (orientation: portrait) {
+    .text {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+        line-height: 7vw;
+        height: 22vw;
+        font-size: 5vw;
+    }
+}
+
+@media all and (orientation: landscape) {
+    .text {
+        width: 50vw;
+        left: 50%;
+        margin-left: -25vw;
+        line-height: 7vh;
+        height: 22vh;
+        font-size: 5vh;
+    }
+}
+
+a {
+    color: white;
+}
+
+.horizontal {
+    background-image: url('http://hq-oboi.ru/photo/kotik_kak_pushistyy_komochek_1920x1200.jpg');
+}
+
+.vertical {
+    background-image: url('http://www.cat-tube.ru/uploads/posts/2013-09/1378291525_1235368_650608204972779_2094160039_n.jpg');
+}
